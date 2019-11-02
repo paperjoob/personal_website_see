@@ -25,7 +25,8 @@ const styles = theme => ({
 		fontWeight: 'bolder',
         textTransform: 'uppercase',
         color: 'white',
-        margin: '50px'
+        margin: '50px',
+        fontSize: 55
     },
     text: {
         fontWeight: 'bolder',

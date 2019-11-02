@@ -17,8 +17,8 @@ function App() {
       <CssBaseline />
         <NavBar />
         <Parallax
-          blur={2}
-          bgImage={require('./Images/gold.jpg')}
+          blur={0}
+          bgImage={require('./Images/blackgold.jpg')}
           bgImageAlt="the cat"
           strength={500}>
           <Main />
