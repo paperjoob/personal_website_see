@@ -1,24 +1,35 @@
 import React from 'react';
 
 import NavBar from './NavBar/NavBar';
-import Header from './Header/Header';
+import Main from './Main/Main';
 import AboutMe from './AboutMe/AboutMe';
 import Portfolio from './Portfolio/Portfolio';
 import Travel from './Travel/Travel';
 import ContactMe from './ContactMe/ContactMe';
 
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { Parallax} from 'react-parallax';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment>
+      <CssBaseline />
         <NavBar />
-        <Header />
+        <Parallax
+          blur={10}
+          bgImage={require('./Images/pinkgold.jpg')}
+          bgImageAlt="the cat"
+          strength={200}>
+          <Main />
+        </Parallax>
+
         <AboutMe />
         <Portfolio />
         <Travel />
         <ContactMe />
-    </div>
+
+    </React.Fragment>
   );
 }
 
