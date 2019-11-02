@@ -11,7 +11,7 @@ const styles = theme => ({
 		width: '100vw',
 		height: '100vh',
 		paddingTop: '50px',
-		margin: 'auto'
+		margin: 'auto',
 	},
 	backgroundColor: {
 		backgroundColor: theme.palette.background.paper
@@ -21,12 +21,17 @@ const styles = theme => ({
 		width: '300px',
 		margin: 'auto'
 	},
-	titleText: {
+	title: {
 		fontWeight: 'bolder',
         textTransform: 'uppercase',
         color: 'white',
         margin: '50px'
-	}
+    },
+    text: {
+        fontWeight: 'bolder',
+        color: 'white',
+        margin: '50px'
+    }
 });
 
 class Main extends Component {
@@ -42,7 +47,7 @@ class Main extends Component {
                         <Typography
                             variant='h3'
                             align='center'
-                            className={classes.titleText}>
+                            className={classes.title}>
                             See Yang
                         </Typography>
 					</Grid>
@@ -54,8 +59,8 @@ class Main extends Component {
 							<Typography
 								variant='h5'
 								align='center'
-								className={classes.titleText}>
-								Full Stack Software Engineer
+								className={classes.text}>
+								FULL STACK SOFTWARE DEVELOPER
                                 <br />
                                 Minneapolis, MN
 							</Typography>
