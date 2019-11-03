@@ -3,6 +3,7 @@ import { Element } from 'react-scroll';
 import Profile from '../Images/see.jpg';
 import { Grid, Avatar, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
+import Image from '../Images/drive.JPG'
 
 import './Main.css';
 
@@ -11,7 +12,11 @@ const styles = theme => ({
 		width: '100vw',
 		height: '100vh',
 		paddingTop: '150px',
-		margin: 'auto',
+        margin: 'auto',
+        backgroundImage: `url(${Image})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: 'cover',
+        backgroundPosition: "center center",
 	},
 	profile: {
 		height: '300px',
@@ -40,7 +45,7 @@ class Main extends Component {
 
         return (
             <Element name="Main" className="Main">
-                <Grid className={classes.root}>
+                <Grid className={classes.root} >
                     <Grid item xs={12}>
                         <Typography
                             variant='h3'

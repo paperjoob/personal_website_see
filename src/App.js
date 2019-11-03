@@ -16,16 +16,16 @@ function App() {
     <React.Fragment>
       <CssBaseline />
         <NavBar />
-        <Parallax
+        {/* <Parallax
           blur={1}
           bgImage={require('./Images/drive.JPG')}
           bgImageAlt="main gold background"
-          strength={200}
+          strength={0}
           bgImageStyle={{opacity: '0.7'}}
           >
           <Main />
-        </Parallax>
-
+        </Parallax> */}
+        <Main />
         <AboutMe />
         <Portfolio />
         <Travel />
