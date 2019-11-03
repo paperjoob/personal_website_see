@@ -28,7 +28,8 @@ const styles = theme => ({
         textTransform: 'uppercase',
         color: 'white',
         marginTop: '250px',
-        fontSize: 55
+        fontSize: 55,
+        fontFamily: 'default'
     },
     text: {
         fontWeight: 'bolder',

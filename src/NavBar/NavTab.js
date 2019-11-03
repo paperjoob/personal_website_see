@@ -7,7 +7,7 @@ const ScrollLink = Scroll.Link;
 class NavTab extends Component {
 	render() {
 		return (
-			<ScrollLink to={this.props.to} spy={true} smooth={true} duration={500} offset={50}>
+			<ScrollLink to={this.props.to} spy={true} smooth={true} duration={500}>
 				<Tab
 					label={this.props.to}
 					value={this.props.value}

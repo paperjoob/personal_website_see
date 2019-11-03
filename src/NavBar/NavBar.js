@@ -76,7 +76,7 @@ class NavBar extends Component {
                     See
                 </Typography>
               <Tabs value={value} classes={{indicator: classes.indicator}} centered>
-                <NavTab label="About Me" to="About Me" value={0} handleChange={this.handleChange} />
+                <NavTab label="About" to="About" value={0} handleChange={this.handleChange} />
                 <NavTab label="Portfolio" to="Portfolio" value={1} handleChange={this.handleChange} />
                 <NavTab label="Travel" to="Travel" value={2} handleChange={this.handleChange} />
                 <NavTab label="Contact Me" to="Contact Me" value={3} handleChange={this.handleChange} />
