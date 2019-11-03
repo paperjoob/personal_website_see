@@ -37,6 +37,9 @@ import NavTab from './NavTab';
         },
         fontSize: 24,
         flexGrow: 1,
+        color: 'black',
+        fontWeight: 'medium',
+        fontStyle: 'italic',
     },
   });
 
@@ -67,7 +70,7 @@ class NavBar extends Component {
         return (
             <div className={classes.root}>
             <ThemeProvider theme={theme}>
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <Toolbar>
                 <Typography variant="h1" className={classes.title}>
                     See

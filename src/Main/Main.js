@@ -10,22 +10,19 @@ const styles = theme => ({
 	root: {
 		width: '100vw',
 		height: '100vh',
-		paddingTop: '50px',
+		paddingTop: '150px',
 		margin: 'auto',
-	},
-	backgroundColor: {
-		backgroundColor: theme.palette.background.paper
 	},
 	profile: {
 		height: '300px',
-		width: '300px',
+		width: '280px',
 		margin: 'auto'
 	},
 	title: {
 		fontWeight: 'bolder',
         textTransform: 'uppercase',
         color: 'white',
-        margin: '50px',
+        marginTop: '250px',
         fontSize: 55
     },
     text: {
@@ -44,26 +41,25 @@ class Main extends Component {
         return (
             <Element name="Main" className="Main">
                 <Grid className={classes.root}>
-                <Grid item xs={12}>
+                    <Grid item xs={12}>
                         <Typography
                             variant='h3'
                             align='center'
                             className={classes.title}>
-                            See Yang
+                            Hello, 
+                            <br />
+                            I'm See Yang
                         </Typography>
 					</Grid>
-                    <Grid item xs={12}>
+                    {/* <Grid item xs={12}>
 						<Avatar src={Profile} className={classes.profile} />
-					</Grid>
-                    <br />
+					</Grid> */}
                     <Grid item xs={12}>
 							<Typography
 								variant='h5'
 								align='center'
 								className={classes.text}>
-								FULL STACK SOFTWARE DEVELOPER
-                                <br />
-                                Minneapolis, MN
+								I love coding ( and traveling ).
 							</Typography>
 						</Grid>
 

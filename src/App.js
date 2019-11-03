@@ -17,10 +17,12 @@ function App() {
       <CssBaseline />
         <NavBar />
         <Parallax
-          blur={0}
-          bgImage={require('./Images/blackgold.jpg')}
-          bgImageAlt="the cat"
-          strength={500}>
+          blur={1}
+          bgImage={require('./Images/drive.JPG')}
+          bgImageAlt="main gold background"
+          strength={200}
+          bgImageStyle={{opacity: '0.7'}}
+          >
           <Main />
         </Parallax>
 
