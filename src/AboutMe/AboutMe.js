@@ -48,6 +48,9 @@ const theme = createMuiTheme({
         align:"center",
         justify: 'center',
         margin: 'auto'
+    },
+    dividerColor: {
+        backgroundColor: 'gold',
     }
 });
 
@@ -80,9 +83,13 @@ class AboutMe extends Component {
                             <Typography variant='h3' align='center' fontFamily='default'>
                                 Get to Know Me
                             </Typography>
-                            <Divider />
-                            <Typography paragraph align='center' className={classes.bio}>
-                                Welcome! My name is See. I'm a Full Stack Software Developer based in Minneapolis, MN.
+                            <Divider className={classes.dividerColor}/>
+                            <Typography paragraph align='center' className={classes.bio} >
+                                Welcome! My name is See. I am a new and ever-curious Software Developer based in Minneapolis, MN.
+                                <br />
+                                I enjoy learning and making websites, both on the front-end and back-end.
+                                <br />
+                                When I am not coding, I am busy hiking, planning my future travels, or being with my family.
                             </Typography>
                         </Grid>
                     </div>

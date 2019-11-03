@@ -72,7 +72,7 @@ class NavBar extends Component {
             <ThemeProvider theme={theme}>
             <AppBar position="fixed">
                 <Toolbar>
-                <Typography variant="h1" className={classes.title}>
+                <Typography variant="h1" className={classes.title} >
                     See
                 </Typography>
               <Tabs value={value} classes={{indicator: classes.indicator}} centered>
