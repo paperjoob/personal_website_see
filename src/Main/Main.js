@@ -56,6 +56,7 @@ class Main extends Component {
                             I'm See Yang
                         </Typography>
 					</Grid>
+                    <br />
                     <Grid item xs={12}>
 							<Typography
 								variant='h4'
