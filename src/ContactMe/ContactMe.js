@@ -71,13 +71,13 @@ class ContactMe extends Component {
         event.preventDefault();
         const { name, email, subject, message } = this.state;
         let templateParams = {
-          from_name: name + '(' + this.state.email +')',
+          from_name: name + '(' + email +')',
           to_name: 'seeyang24@gmail.com',
           subject: subject,
           message_html: message,
          }
          emailjs.send(
-          'gmail',
+          'default_service',
           'template_aKix9bLm',
            templateParams,
           'user_EBdcvYx7cR5ar14ONYDge'
