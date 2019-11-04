@@ -41,7 +41,7 @@ const styles = theme => ({
         marginLeft: theme.spacing(3),
         width: 250,
         align: 'center',
-        padding: '3px'
+        padding: '3px',
     },
     container: {
         display: "flex",
@@ -55,7 +55,8 @@ const styles = theme => ({
         '&:hover': {
         backgroundColor: 'palevioletred',
         },
-    }
+    },
+    
 });
 
 class ContactMe extends Component {

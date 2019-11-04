@@ -11,9 +11,7 @@ class NavTab extends Component {
 				<Tab
 					label={this.props.to}
 					value={this.props.value}
-					// index={this.props.value}
 					onClick={() => this.props.handleChange(this.props.value)}
-					// style={{display: 'inline-block'}}
 				/>
 			</ScrollLink>
 		);

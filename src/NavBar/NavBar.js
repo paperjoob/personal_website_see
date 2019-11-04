@@ -40,6 +40,7 @@ import NavTab from './NavTab';
         color: 'black',
         fontWeight: 'medium',
         fontStyle: 'italic',
+        cursor: 'pointer'
     },
   });
 
@@ -59,9 +60,12 @@ class NavBar extends Component {
     // when one tab is clicked, set the value to that clicked tab and scroll to that tab
     handleChange = (nextValue) => {
     this.setState({ value: nextValue });
-    console.log(this.state.value);
-    console.log(nextValue);
     };
+
+    //takes user back to top of page
+    handleClick = () => {
+      window.location.assign('http://www.seeyang.info');
+    }
 
     render() {
         const { classes } = this.props;
@@ -72,7 +76,7 @@ class NavBar extends Component {
             <ThemeProvider theme={theme}>
             <AppBar position="fixed">
                 <Toolbar>
-                <Typography variant="h1" className={classes.title} >
+                <Typography variant="h1" className={classes.title} onClick={this.handleClick}>
                     See
                 </Typography>
               <Tabs value={value} classes={{indicator: classes.indicator}} centered>
