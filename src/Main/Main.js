@@ -57,9 +57,10 @@ class Main extends Component {
                         </Typography>
 					</Grid>
                     <br />
+                    <br />
                     <Grid item xs={12}>
 							<Typography
-								variant='h4'
+								variant='h5'
 								align='center'
 								className={classes.text}>
 								I love coding ( and traveling ).
