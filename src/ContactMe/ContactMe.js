@@ -73,7 +73,7 @@ class ContactMe extends Component {
         const { name, email, subject, message } = this.state;
         let templateParams = {
           from_name: email,
-          to_name: ' seeyang24_gmail_com',
+          to_name: 'seeyang24@gmail.com',
           subject: subject,
           message_html: message,
          }
