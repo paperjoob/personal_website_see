@@ -71,7 +71,7 @@ class ContactMe extends Component {
         event.preventDefault();
         const { name, email, subject, message } = this.state;
         let templateParams = {
-          from_name: email,
+          from_name: name + '(' + this.state.email +')',
           to_name: 'seeyang24@gmail.com',
           subject: subject,
           message_html: message,
@@ -122,15 +122,16 @@ class ContactMe extends Component {
                             </Typography>
                             <Divider className={classes.dividerColor}/>
                             <br />
-                            <form className='ContactForm' >
+                            <form className='ContactForm' onSubmit={this.handleSubmit}>
                                 <TextField label="Name" className={classes.textField} value={this.state.name} 
-                                    onChange={(event) => {this.handleChange(event, 'name')}}/>
+                                    name="name" onChange={(event) => {this.handleChange(event, 'name')}}/>
                                 <TextField label="Email" className={classes.textField} value={this.state.email} 
-                                    onChange={(event) => {this.handleChange(event, 'email')}}/>
+                                    name="email" onChange={(event) => {this.handleChange(event, 'email')}}/>
                                 <TextField label="Subject" className={classes.textField} value={this.state.subject} 
-                                    onChange={(event) => {this.handleChange(event, 'subject')}}/>
+                                    name="subject" onChange={(event) => {this.handleChange(event, 'subject')}}/>
                                 <TextField
                                     label="Message"
+                                    name="message"
                                     multiline
                                     rows="4"
                                     value={this.state.message}
