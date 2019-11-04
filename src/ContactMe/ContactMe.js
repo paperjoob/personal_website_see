@@ -6,7 +6,8 @@ import { Typography, Button, Divider, Grid, TextField} from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import SendIcon from '@material-ui/icons/Send';
 
-import * as emailjs from 'emailjs-com'
+import * as emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
 const styles = theme => ({
 	root: {
@@ -23,9 +24,9 @@ const styles = theme => ({
         paddingTop: '80px',
         paddingBottom: '30px'
     },
-    bio: {
+    text: {
         fontFamily: 'default',
-        fontSize: '18px'
+        fontSize: '24px'
     },
     grid: {
         width: '700px',
@@ -69,6 +70,13 @@ class ContactMe extends Component {
     // submit the message onClick
     handleSubmit = (event) => {
         event.preventDefault();
+        if (this.state.email === '') {
+            return Swal.fire({
+                type: 'error',
+                title: 'Oops...',
+                text: 'Please enter in your email',
+              })
+        } else {
         const { name, email, subject, message } = this.state;
         let templateParams = {
           from_name: name + '(' + email +')',
@@ -82,8 +90,12 @@ class ContactMe extends Component {
            templateParams,
           'user_EBdcvYx7cR5ar14ONYDge'
          )
-         console.log(this.state)
+         Swal.fire({
+            type: 'success',
+            title: 'Message sent!',
+          })
          this.resetForm()
+        }
     }
 
     resetForm() {
@@ -100,7 +112,6 @@ class ContactMe extends Component {
         this.setState({ 
             [param]: event.target.value
         })
-        console.log(event.target.value)
     }
 
     render() {
@@ -111,14 +122,16 @@ class ContactMe extends Component {
                    <div className={classes.root}>
                         <Grid item xs={12}>
                             <Typography variant='h3' align='center' className={classes.title}>
-                                Connect with Me!
+                                Let's Connect!
                             </Typography>
                         </Grid>
 
                         <br />
                         <Grid item xs={6} className={classes.grid}>
-                            <Typography variant='h4' align='center'>
-                                Send me an email
+                            <Typography variant='h4' align='center' className={classes.text}>
+                                Send me an email at seeyang24@gmail.com
+                                <br />
+                                or fill out the form below.
                             </Typography>
                             <Divider className={classes.dividerColor}/>
                             <br />
