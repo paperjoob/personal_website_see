@@ -2,12 +2,11 @@ import React, {Component} from 'react';
 import { Element } from 'react-scroll';
 import './ContactMe.css';
 
-import { Typography, Button, Divider, Paper, Grid, TextField} from '@material-ui/core';
+import { Typography, Button, Divider, Grid, TextField} from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import SendIcon from '@material-ui/icons/Send';
-import Icon from '@material-ui/core/Icon';
 
-import emailjs from 'emailjs-com';
+import * as emailjs from 'emailjs-com'
 
 const styles = theme => ({
 	root: {
