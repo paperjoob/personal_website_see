@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Element } from 'react-scroll';
-import Profile from '../Images/see.jpg';
-import { Grid, Avatar, Typography } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import Image from '../Images/drive.JPG'
 
@@ -57,9 +56,6 @@ class Main extends Component {
                             I'm See Yang
                         </Typography>
 					</Grid>
-                    {/* <Grid item xs={12}>
-						<Avatar src={Profile} className={classes.profile} />
-					</Grid> */}
                     <Grid item xs={12}>
 							<Typography
 								variant='h5'

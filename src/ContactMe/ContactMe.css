@@ -1,0 +1,38 @@
+/* .ContactHeader {
+    background-color: gold;
+    height: 100px;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+
+.ContactDiv {
+    height: 100vh
+} */
+
+.ContactForm {
+    background-color: mistyrose;
+    width: 350px;
+    height: 370px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 4px;
+}
+
+.submitButton {
+    background-color: #00acb0;
+    border-radius: 4px;
+    color: #f8f8f8;
+    min-height: 50px;
+    min-width: 100px;
+    outline:0;
+    cursor: pointer;
+    margin: auto;
+    align-content: center;
+    justify-content:center;
+    text-align: center;
+    display: block;
+}
+
+.submitButton:hover {
+    background-color: #008183;
+}

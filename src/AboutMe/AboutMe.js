@@ -2,10 +2,8 @@ import React, {Component} from 'react';
 import { Element } from 'react-scroll';
 import Profile from '../Images/see.jpg';
 
-import { Grid, Avatar, Typography, Paper, Divider } from '@material-ui/core';
+import { Grid, Avatar, Typography, Divider } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
-
-import CssBaseline from '@material-ui/core/CssBaseline';
 
 import './AboutMe.css';
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -65,10 +63,7 @@ class AboutMe extends Component {
                 <ThemeProvider theme={theme}>
                     <div className={classes.root}>
                         <Grid item xs={12}>
-                            <Typography
-                                variant='h3'
-                                align='center'
-                                className={classes.title}>
+                            <Typography variant='h3' align='center' className={classes.title}>
                                 About See
                             </Typography>
                         </Grid>
@@ -89,7 +84,7 @@ class AboutMe extends Component {
                                 <br />
                                 I enjoy learning and making websites, both on the front-end and back-end.
                                 <br />
-                                When I am not coding, I am busy hiking, planning my future travels, or being with my family.
+                                When I am not coding, I am busy hiking, planning my future travels, or spending time with my family.
                             </Typography>
                         </Grid>
                     </div>
