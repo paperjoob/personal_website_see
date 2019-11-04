@@ -22,7 +22,7 @@ import { withStyles } from '@material-ui/core/styles';
         color: 'black',
         fontSize: 55,
         paddingTop: '80px',
-        paddingBottom: '30px'
+        paddingBottom: '1vh'
     },
     bio: {
         fontFamily: 'default',

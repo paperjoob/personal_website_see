@@ -22,7 +22,7 @@ const styles = theme => ({
         color: 'black',
         fontSize: 55,
         paddingTop: '80px',
-        paddingBottom: '30px'
+        paddingBottom: '1vh'
     },
     text: {
         fontFamily: 'default',
@@ -75,7 +75,7 @@ class ContactMe extends Component {
             return Swal.fire({
                 type: 'error',
                 title: 'Oops...',
-                text: 'Please enter in your email',
+                text: 'Please enter in your email.',
               })
         } else {
         const { name, email, subject, message } = this.state;
@@ -126,8 +126,6 @@ class ContactMe extends Component {
                                 Let's Connect!
                             </Typography>
                         </Grid>
-
-                        <br />
                         <Grid item xs={6} className={classes.grid}>
                             <Typography variant='h4' align='center' className={classes.text}>
                                 Send me an email at seeyang24@gmail.com

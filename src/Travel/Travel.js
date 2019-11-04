@@ -21,7 +21,7 @@ import { withStyles } from '@material-ui/core/styles';
         color: 'black',
         fontSize: 55,
         paddingTop: '80px',
-        paddingBottom: '30px'
+        paddingBottom: '1vh'
     },
     bio: {
         fontFamily: 'default',
@@ -50,11 +50,9 @@ class Travel extends Component {
                                 Travel
                             </Typography>
                         </Grid>
-
-                        <br />
                         <Grid item xs={6} className={classes.grid}>
                             <Typography variant='h4' align='center' className={classes.text}>
-
+                                Oh, the places you'll go
                             </Typography>
                             <Divider className={classes.dividerColor}/>
                         </Grid>
