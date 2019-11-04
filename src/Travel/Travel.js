@@ -1,7 +1,12 @@
 import React, {Component} from 'react';
 import { Element } from 'react-scroll';
-import { Grid, Typography, Divider } from '@material-ui/core';
+import { Grid, Typography, Divider, Paper } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
+
+import './Travel.css';
+
+import Thailand from '../Images/thailand.jpg';
+import Rockies from '../Images/IMG-3189.JPG';
 
   const styles = theme => ({
 	root: {
@@ -35,7 +40,13 @@ import { withStyles } from '@material-ui/core/styles';
     },
     dividerColor: {
         backgroundColor: 'gold',
-    }
+    },
+    container: {
+        display: "flex",
+        justifyContent: "center",
+        align: 'center',
+        margin: 'auto'
+    },
 });
 
 class Travel extends Component {
@@ -56,7 +67,16 @@ class Travel extends Component {
                             </Typography>
                             <Divider className={classes.dividerColor}/>
                         </Grid>
-                    </div>
+                        <br />
+                        <Grid container spacing={2} className={classes.container}>
+                            <Grid item xs={3} >
+                                <img src={Thailand}/>
+                            </Grid>
+                            <Grid item xs={3} >
+                                <img className="rockies" src={Rockies}/>
+                            </Grid>
+                        </Grid>
+                </div>
             </Element>
         )
     }

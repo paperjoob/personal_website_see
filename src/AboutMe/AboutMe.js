@@ -72,7 +72,6 @@ class AboutMe extends Component {
                                 <Avatar src={Profile} className={classes.profile} />
                             </Grid>
                         </Grid>
-
                         <br />
                         <Grid item xs={6} className={classes.grid}>
                             <Typography variant='h3' align='center' fontFamily='default'>

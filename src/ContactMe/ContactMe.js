@@ -128,7 +128,7 @@ class ContactMe extends Component {
                         </Grid>
                         <Grid item xs={6} className={classes.grid}>
                             <Typography variant='h4' align='center' className={classes.text}>
-                                Send me an email at seeyang24@gmail.com
+                                Message me at seeyang24@gmail.com
                                 <br />
                                 or fill out the form below.
                             </Typography>

@@ -6,6 +6,7 @@ import AboutMe from './AboutMe/AboutMe';
 import Portfolio from './Portfolio/Portfolio';
 import Travel from './Travel/Travel';
 import ContactMe from './ContactMe/ContactMe';
+import { Parallax } from 'react-parallax';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import './App.css';
@@ -18,7 +19,14 @@ function App() {
         <Main />
         <AboutMe />
         <Portfolio />
+        <Parallax
+            blur={3}
+            bgImage={require('./Images/germany.JPG')}
+            bgImageAlt="the cat"
+            strength={100}
+        >
         <Travel />
+        </Parallax>
         <ContactMe />
 
     </React.Fragment>
