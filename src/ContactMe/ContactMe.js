@@ -29,13 +29,17 @@ const styles = theme => ({
         fontSize: '24px'
     },
     grid: {
-        width: '700px',
+        flexGrow: 2,
         align:"center",
         justify: 'center',
         margin: 'auto'
     },
     dividerColor: {
         backgroundColor: 'gold',
+        width: '80%',
+        margin: 'auto',
+        align: 'center'
+
     },
     textField: {
         marginLeft: theme.spacing(3),
@@ -56,7 +60,12 @@ const styles = theme => ({
         backgroundColor: 'palevioletred',
         },
     },
-    
+    formInput: {
+        align:"center",
+        justify: 'center',
+        margin: 'auto',
+        flexGrow: 1
+    }
 });
 
 class ContactMe extends Component {
@@ -126,7 +135,7 @@ class ContactMe extends Component {
                                 Let's Connect!
                             </Typography>
                         </Grid>
-                        <Grid item xs={6} className={classes.grid}>
+                        <Grid className={classes.grid} style={{ minHeight: '100vh' }}>
                             <Typography variant='h4' align='center' className={classes.text}>
                                 Message me at seeyang24@gmail.com
                                 <br />
