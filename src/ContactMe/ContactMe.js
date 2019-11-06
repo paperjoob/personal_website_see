@@ -128,7 +128,7 @@ class ContactMe extends Component {
         const { classes } = this.props;
 
         return (
-            <Element name="Contact Me" id="Contact Me" >
+            <Element name="Contact" id="Contact" >
                    <div className={classes.root}>
                         <Grid item xs={12}>
                             <Typography variant='h3' align='center' className={classes.title}>

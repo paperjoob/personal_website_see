@@ -21,9 +21,19 @@ import NavTab from './NavTab';
   
   const styles = theme => ({
     root: {
-      flexGrow: 1,
-      backgroundColor: theme.palette.background.paper,
-    },
+		position: 'fixed',
+		display: 'flex',
+		zIndex: 1,
+		[theme.breakpoints.up('md')]: {
+			left: '25px',
+			top: '15vh',
+		},
+		[theme.breakpoints.down('sm')]: {
+			backgroundColor: theme.palette.background.default,
+			width: '100vw',
+			justifyContent: 'center'
+		}
+	},
     indicator: {
         backgroundColor: 'gold',
     },
@@ -83,9 +93,9 @@ class NavBar extends Component {
                 <NavTab label="About" to="About" value={0} handleChange={this.handleChange} />
                 <NavTab label="Portfolio" to="Portfolio" value={1} handleChange={this.handleChange} />
                 <NavTab label="Travel" to="Travel" value={2} handleChange={this.handleChange} />
-                <NavTab label="Contact Me" to="Contact Me" value={3} handleChange={this.handleChange} />
+                <NavTab label="Contact Me" to="Contact" value={3} handleChange={this.handleChange} />
               </Tabs>
-              <IconButton><GitHubIcon /></IconButton>
+              {/* <IconButton><GitHubIcon /></IconButton> */}
               </Toolbar>
             </AppBar>
             </ThemeProvider>
