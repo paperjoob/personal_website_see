@@ -6,7 +6,15 @@ import { withStyles } from '@material-ui/core/styles';
 import './Travel.css';
 
 import Thailand from '../Images/thailand.jpg';
-import Rockies from '../Images/IMG-3189.JPG';
+import Rockies from '../Images/rockies.JPG';
+import Hawaii2 from '../Images/Hawaii2.jpg';
+import Minneapolis from '../Images/minneapolis.JPG';
+import Venice from '../Images/venice2.jpg';
+import Denver from '../Images/denver.jpg';
+import Crested from '../Images/crestedbutte.jpg';
+import Phuket from '../Images/phuket2.JPG';
+
+import ImageGallery from 'react-image-gallery';
 
   const styles = theme => ({
 	root: {
@@ -47,11 +55,56 @@ import Rockies from '../Images/IMG-3189.JPG';
         align: 'center',
         margin: 'auto'
     },
+    smallgrid: {
+        width: '70vh',
+        align: 'center',
+        margin: 'auto',
+        padding: '5vh'
+    }
 });
 
 class Travel extends Component {
     render() {
         const { classes } = this.props;
+
+        const images = [
+            {
+                original: Minneapolis,
+                thumbnail: Minneapolis,
+                description: 'Minneapolis, MN'
+            },
+            {
+                original: Phuket,
+                thumbnail: Phuket,
+                description: 'Phuket, Thailand',
+            },
+            {
+                original: Rockies,
+                thumbnail: Rockies,
+                description: 'Rocky Mountains National Park'
+            },
+            {
+                original: Hawaii2,
+                thumbnail: Hawaii2,
+                description: 'Haunama Bay, Hawaii',
+            },
+            {
+                original: Venice,
+                thumbnail: Venice,
+                description: 'Venice, Italy',
+            },
+            {
+                original: Denver,
+                thumbnail: Denver,
+                description: 'Denver, CO',
+            },
+            {
+                original: Crested,
+                thumbnail: Crested,
+                description: 'Crested Butte, CO',
+            },
+
+          ];
 
         return (
             <Element name="Travel" id="Travel">
@@ -67,14 +120,8 @@ class Travel extends Component {
                             </Typography>
                             <Divider className={classes.dividerColor}/>
                         </Grid>
-                        <br />
-                        <Grid container spacing={2} className={classes.container}>
-                            <Grid item xs={3} >
-                                <img src={Thailand}/>
-                            </Grid>
-                            <Grid item xs={3} >
-                                <img className="rockies" src={Rockies}/>
-                            </Grid>
+                        <Grid className={classes.smallgrid}>
+                        <ImageGallery items={images} className='image'/>
                         </Grid>
                 </div>
             </Element>
