@@ -59,7 +59,11 @@ import ImageGallery from 'react-image-gallery';
         width: '70vh',
         align: 'center',
         margin: 'auto',
-        padding: '5vh'
+        padding: '6vh',
+		[theme.breakpoints.down('sm')]: {
+			width: '100vw',
+			justifyContent: 'center'
+		}
     }
 });
 
@@ -121,7 +125,7 @@ class Travel extends Component {
                             <Divider className={classes.dividerColor}/>
                         </Grid>
                         <Grid className={classes.smallgrid}>
-                        <ImageGallery items={images} className='image'/>
+                        <ImageGallery items={images} />
                         </Grid>
                 </div>
             </Element>

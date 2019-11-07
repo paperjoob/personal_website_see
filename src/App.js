@@ -20,9 +20,9 @@ function App() {
         <AboutMe />
         <Portfolio />
         <Parallax
-            blur={3}
+            blur={5}
             bgImage={require('./Images/germany.JPG')}
-            bgImageAlt="the cat"
+            bgImageAlt="munich"
             strength={100}
         >
         <Travel />
