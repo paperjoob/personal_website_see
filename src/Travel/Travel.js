@@ -31,14 +31,13 @@ import ImageGallery from 'react-image-gallery';
     },
     title: {
 		fontWeight: 'bolder',
-        color: 'black',
+        color: 'white',
         fontSize: 55,
         paddingTop: '80px',
         paddingBottom: '1vh'
     },
-    bio: {
-        fontFamily: 'default',
-        fontSize: '18px'
+    text: {
+        color: 'white'
     },
     grid: {
         width: '700px',
