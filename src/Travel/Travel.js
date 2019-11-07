@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import { Element } from 'react-scroll';
-import { Grid, Typography, Divider, Paper } from '@material-ui/core';
+import { Grid, Typography, Divider } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
 import './Travel.css';
 
-import Thailand from '../Images/thailand.jpg';
 import Rockies from '../Images/rockies.JPG';
 import Hawaii2 from '../Images/Hawaii2.jpg';
 import Minneapolis from '../Images/minneapolis.JPG';
@@ -24,11 +23,6 @@ import ImageGallery from 'react-image-gallery';
 		align: 'center',
 		justify: 'center',
 	},
-	profile: {
-		height: '300px',
-		width: '280px',
-        margin: 'auto',
-    },
     title: {
 		fontWeight: 'bolder',
         color: 'white',
@@ -48,13 +42,7 @@ import ImageGallery from 'react-image-gallery';
     dividerColor: {
         backgroundColor: 'gold',
     },
-    container: {
-        display: "flex",
-        justifyContent: "center",
-        align: 'center',
-        margin: 'auto'
-    },
-    smallgrid: {
+    pictureGrid: {
         width: '70vh',
         align: 'center',
         margin: 'auto',
@@ -123,7 +111,7 @@ class Travel extends Component {
                             </Typography>
                             <Divider className={classes.dividerColor}/>
                         </Grid>
-                        <Grid className={classes.smallgrid}>
+                        <Grid className={classes.pictureGrid}>
                         <ImageGallery items={images} />
                         </Grid>
                 </div>

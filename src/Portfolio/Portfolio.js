@@ -12,11 +12,6 @@ import { withStyles } from '@material-ui/core/styles';
 		align: 'center',
 		justify: 'center',
 	},
-	profile: {
-		height: '300px',
-		width: '280px',
-        margin: 'auto',
-    },
     title: {
 		fontWeight: 'bolder',
         color: 'black',
