@@ -50,6 +50,11 @@ import ImageGallery from 'react-image-gallery';
 		[theme.breakpoints.down('sm')]: {
 			width: '100vw',
 			justifyContent: 'center'
+        },
+        [theme.breakpoints.down('md')]: {
+            width: '100vw',
+            height: '100vw',
+			justifyContent: 'center'
 		}
     }
 });
