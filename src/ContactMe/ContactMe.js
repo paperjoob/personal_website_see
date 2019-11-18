@@ -5,9 +5,12 @@ import './ContactMe.css';
 import { Typography, Button, Divider, Grid, TextField} from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import SendIcon from '@material-ui/icons/Send';
+import Backup from '@material-ui/icons/ArrowUpwardOutlined';
 
 import * as emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+
+import ScrollToTop from 'react-scroll-up'
 
 const styles = theme => ({
 	root: {
@@ -174,6 +177,9 @@ class ContactMe extends Component {
                                 Thanks for visiting!
                             </Typography>
                         </Grid>
+                        <ScrollToTop showUnder={2800}>
+                                <Backup width="200px"></Backup>
+                        </ScrollToTop>
                     </div>
             </Element>
         )

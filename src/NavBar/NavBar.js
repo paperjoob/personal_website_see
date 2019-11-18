@@ -8,7 +8,6 @@ import Typography from '@material-ui/core/Typography';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import { Toolbar } from '@material-ui/core';
-import IconButton from '@material-ui/core/IconButton';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
 import NavTab from './NavTab';

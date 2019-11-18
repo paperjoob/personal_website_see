@@ -37,7 +37,7 @@ const theme = createMuiTheme({
   const styles = theme => ({
 	root: {
         flexGrow: 1,
-        height: '100vh',
+        minHeight: '100vh',
         width: '100vw',
 		align: 'center',
 		justify: 'center',
@@ -143,7 +143,7 @@ class AboutMe extends Component {
                                 When I am not coding, I am busy hiking, planning my future travels, or spending time with my family.
                             </Typography>
                         </Grid>
-                        <Grid item xs={8}  className={classes.grid} align="center">
+                        <Grid item xs={8}  className={classes.iconGrid} align="center">
                             <Typography paragraph align='center' className={classes.languages} >
                                 Languages and Tools:
                             </Typography>
